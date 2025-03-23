@@ -220,4 +220,4 @@ def get_events():
     return jsonify({'events': events_data}), 200
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=5000)
