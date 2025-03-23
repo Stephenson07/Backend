@@ -170,7 +170,9 @@ def upload_image():
     return jsonify({'error': f'File type not allowed: {file.filename}'}), 400
 
 
-
+@app.route('/analyze', methods=['GET'])
+def hello():
+    return jsonify({'hellow':'check'})
 
 @app.route('/analyze', methods=['GET'])
 def analyze_ewaste():
